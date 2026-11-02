@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domeenid ja serverite võrdlus</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 32px 20px;
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f3f6fb;
+        }
+        main { max-width: 1200px; margin: 0 auto; }
+        h1 { margin: 0 0 24px; color: #14213d; }
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            align-items: stretch;
+        }
+        article {
+            padding: 24px;
+            background: #fff;
+            border: 1px solid #dce3ee;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(20, 33, 61, .06);
+        }
+        h2 { margin: 0 0 16px; font-size: 1.25rem; color: #174ea6; }
+        h3 { margin: 18px 0 6px; font-size: 1rem; }
+        p { line-height: 1.55; }
+        .muted { color: #5b6575; font-size: .92rem; }
+        .offer { padding: 12px 0; border-top: 1px solid #e7ebf1; }
+        .price { font-weight: 700; color: #146c43; }
+        @media (max-width: 850px) {
+            .columns { grid-template-columns: 1fr; }
+            body { padding: 22px 14px; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Domeenid ja veebiserverite võrdlus</h1>
+    <section class="columns" aria-label="Kolm teemat">
+        <article>
+            <h2>1. Domeeninimi ja selle kasutus</h2>
+            <h3>ostatelefon.ee</h3>
+            <p>Domeen sobib telefonide ostu ja müügiga tegelevale veebilehele. Sellel saab esitleda müüdavaid telefone, avaldada ostukuulutusi ning jagada infot ettevõtte ja kontaktide kohta.</p>
+            <p class="muted">Lühike ja tegevust kirjeldav nimi aitab külastajal veebilehe eesmärgist kiiresti aru saada.</p>
+        </article>
+
+        <article>
+            <h2>2. Serveriteenuste võrdlus</h2>
+            <div class="offer">
+                <h3>Virtuaal.com — C-S</h3>
+                <p>2 vCPU, 4 GB RAM, 80 GB SSD ja 5 TB liiklust.</p>
+                <p class="price">16,99 €</p>
+                <p class="muted">Sobib väikesele või keskmisele veebirakendusele.</p>
+            </div>
+            <div class="offer">
+                <h3>Pilvio — arendusserver</h3>
+                <p>2 vCPU, 4 GB RAM ja 50 GB ketas.</p>
+                <p class="price">16,15 €</p>
+                <p class="muted">Sobib arenduseks ja testimiseks.</p>
+            </div>
+            <div class="offer">
+                <h3>Elisa — pilv + ressursipõhine</h3>
+                <p>1 vCPU, 1 GB RAM; SSD maht valitakse vajaduse järgi.</p>
+                <p class="price">2,81 € + 2,84 € + ketta tasu</p>
+                <p class="muted">Ettevõtte hallatud pilvelahendus; kogukulu sõltub valitud ressurssidest.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>3. Domeenide omanik ja registreerimine</h2>
+            <h3>google.com</h3>
+            <p><strong>Omanik:</strong> Google LLC</p>
+            <p><strong>Registreeritud:</strong> 15.09.1997</p>
+            <p class="muted">Domeeni kasutatakse Google'i otsingu ja teiste veebiteenuste jaoks.</p>
+            <h3>microsoft.com</h3>
+            <p><strong>Omanik:</strong> Microsoft Corporation</p>
+            <p><strong>Registreeritud:</strong> 02.05.1991</p>
+            <p class="muted">Domeen koondab Microsofti toote-, ettevõtte- ja tugiteavet.</p>
+            <p class="muted">Registreerimisandmed pärinevad avalikest WHOIS/RDAP kirjetest; kontaktandmed võivad olla registripidaja kaudu hallatud.</p>
+        </article>
+    </section>
+</main>
+</body>
+</html>
